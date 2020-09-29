@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Miku Ekspo</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/purchaseTicket_StyleSheet.css'>
+    <!--Stylesheet reference here-->
+    <script src='Javascript/purchaseTicket_Javascript.js'></script>
+    <script src="Javascript/jquery-3.5.1.min.js"></script>
+</head>
+
+<body onload="loadBody()">
+    <div id="Home_Header">
+        <div id="logo_Header"><img src="Assets/logo.png"></div>
+        <!--logo here-->
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li><!--
+                --><li><a href="About.html">ABOUT</a></li><!--
+                --><li><a href="#">MERCH STORE</a></li><!--
+                --><li><a href="purchaseTicket.html">PURCHASE TICKET</a></li><!--
+                --><li><a href="#">CONCERT GALLERY</a></li>
+            </ul>
+        </nav>
+        <div id="eventLogo_Header"><img src="Assets/logo tengah.png" alt=""></div>
+        <!--Logo Tengah here-->
+    </div>
+    <div id="div_form">
+        <h1>PURCHASE TICKET</h1>
+        <form>
+            <h4>Name</h4>
+            <input type="text" id="textBox_Name" placeholder="Full Name" required>
+
+            <h4>Email</h4>
+            <input type="text" id="textBox_Email" placeholder="exampleMail@email.com">
+
+            <h4>Phone</h4>
+            <input type="text" id="textBox_PhoneNumber" placeholder="+62XXXXXXXXXX">
+
+            <h4>Address</h4>
+            <textarea id="textArea_Address" placeholder="Street, District, City, Province, Country"></textarea>
+
+            <h4>Ticket Type</h4>
+            <div id="radioChoices_TicketType">
+                <input type="radio" name="ticketType" id="platinum" value="Platinum">
+                <label for="platinum">Platinum</label><br>
+
+                <input type="radio" name="ticketType" id="gold" value="Gold">
+                <label for="gold">Gold</label><br>
+
+                <input type="radio" name="ticketType" id="silver" value="Silver">
+                <label for="silver">Silver</label><br>
+
+                <input type="radio" name="ticketType" id="bronze" value="Bronze">
+                <label for="bronze">Bronze</label>
+            </div>
+            
+            <div id="div_checkBox">
+                <input type="checkbox" id="termsAndService_checkBox"><label for="termsAndService_checkBox">I agree to the terms and service</label>
+            </div>
+            
+            
+            <div id="div_errorMessages">
+            </div>
+            <div id="div_successMessage"></div>
+
+            <div id="form_buttons">
+                <input type="button" id="btn_Submit" value="Submit" onclick="btn_Submit_onClick()" />
+                <input type="reset" id="btn_reset" value="Reset" onclick="btn_Reset_onClick()"/>
+            </div>
+        </form>
+    </div>
+</body>
+    
+</html>

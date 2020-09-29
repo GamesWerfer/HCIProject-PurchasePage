@@ -1,0 +1,431 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face{
+    font-family: "Code";
+    src: url(Fonts/CODE/CODE_Bold.otf) url(/Fonts/CODE/CODE_Light.otf);
+    
+}
+
+#Home_Header{
+    margin: 0;
+    background-image: url(../Assets/19148.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 1530px 1140px;
+    background-attachment: fixed;
+    height: auto;
+}
+
+#logo_Header{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0;
+}
+
+#logo_Header img{
+    width: 150px;
+    height: auto;
+}
+
+nav{
+    text-align: center;
+    font-family: gadugi;
+    transition: .3s;
+
+    background-color: rgba(0,0,0,80%);
+    color: #38BCBD;
+    height: 48px;
+}
+
+nav ul{
+    transition: .3s;
+    list-style: none;
+    height: 48px;
+    width: auto;
+    
+}
+
+nav ul li{
+    transition: 0.5s;
+    display: inline-block;
+
+    font-size: 18px;
+
+    height: 48px;
+    width: 210px;
+    
+    padding-top: 10px;
+    
+    box-sizing: border-box;
+    border: 0px;
+    
+    
+    
+}
+
+nav ul li:hover{
+    transition: 0.5s;
+    background-color: rgb(50,51,52);
+}
+
+nav ul li a{
+    vertical-align: middle;
+    text-decoration: none;
+    height: 18px;
+    color: #38BCBD;
+}
+
+#eventLogo_Header{
+    
+    text-align: center;
+    height: auto;
+    width: 100%;
+    margin-top: 50px;
+}
+
+#eventLogo_Header img{
+    margin-bottom: 50px;
+}
+
+#div_form{
+    background-color: #181616;
+    
+    padding: 20px;
+}
+
+#div_form h1{
+    transition: .3s;
+    width: 500px;
+    margin: auto;
+    font-size: 40px;
+
+    text-align: center;
+    background-color: #38BCBD;
+    color: #F35B8B;
+}
+
+
+
+form{
+    margin: auto;
+    margin-top: 10px;
+    padding: 50px;
+    
+    width: 50%;
+
+    color: #38BCBD;
+    background-color: #323334;
+}
+
+form h4{
+    font-size: 24px;
+    
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+form input[type=text]{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+
+    height: 30px;
+
+    transition: .6s;
+    background-color: #EEE5E9;
+
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-sizing: border-box;
+    border-bottom: 3px solid #38BCBD;
+}
+
+form input[type=text]:hover{
+    
+    transition: .6s;
+    
+    background-color: #38BCBD;
+    color: #EEE5E9;
+    
+
+    outline:0;
+}
+
+form input[type=text]:hover::placeholder{
+    
+    color:#EEE5E9 ;
+}
+
+form input[type=text]:focus{
+    
+    transition: .4s;
+    
+    background-color: #F35B8B;
+    color: #EEE5E9;
+    border-bottom: none;
+    
+    outline:0;
+}
+
+form input[type=text]:focus::placeholder{
+    
+    color:#EEE5E9 ;
+}
+
+form textarea{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+
+    height: 50px;
+
+    transition: .6s;
+    background-color: #EEE5E9;
+    font-family: Arial, Helvetica, sans-serif;
+
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-sizing: border-box;
+    border-bottom: 3px solid #38BCBD;
+}
+
+form textarea:focus{
+    
+    transition: .6s;
+    
+    background-color: #F35B8B;
+    border-bottom: none;
+    color: #EEE5E9;
+
+    outline:0;
+}
+
+form textarea:hover{
+    transition: .4s;
+    
+    background-color: #38BCBD;
+    color: #EEE5E9;
+
+    outline:0;
+}
+
+form textarea::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form textarea:hover::placeholder{
+    color:#EEE5E9 ;
+}
+
+form textarea:focus::placeholder{
+    color:#EEE5E9 ;
+}
+
+#form_buttons{
+    text-align: center;
+}
+
+#radioChoices_TicketType{
+    
+    padding: 10px;
+    transition: .6s;
+}
+
+#radioChoices_TicketType:hover{
+    transition: .4s;
+    background-color: #F35B8B;
+    color:#EEE5E9 ;
+}
+
+#div_checkBox{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#termsAndService_checkBox{
+    
+    margin-right: 5px;
+}
+
+#form_buttons input[type=button]{
+
+    outline:0;
+
+    transition: .5s;
+    
+
+    height: 40px;
+    width: 120px;
+
+    background-color: #F35B8B;
+    color: #EEE5E9;
+    border: none;
+    font-size: 12pt;
+}
+
+#form_buttons input[type=button]:hover{
+
+    outline:0;
+
+    
+    transition: .5s;
+    background-color: rgb(248, 133, 169);
+}
+
+#form_buttons input[type=reset]{
+
+    outline:0;
+
+    transition: .5s;
+    
+
+    height: 40px;
+    width: 120px;
+
+    background-color: #F35B8B;
+    color: #EEE5E9;
+    border: none;
+    font-size: 12pt;
+}
+
+#form_buttons input[type=reset]:hover{
+
+    outline:0;
+    
+    
+    transition: .5s;
+    background-color: rgb(248, 133, 169);
+}
+
+#form_buttons{
+    margin-top: 15px;
+}
+
+#btm_Submit{
+    margin-right: 10px;
+}
+
+#btn_reset{
+    margin-left: 10px;
+}
+
+#div_errorMessages{
+    color: white;
+    border-color: white;
+    background-color:	rgb(220,20,60);
+
+    text-align: center;
+
+    transition: .6s;
+
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#div_successMessage{
+    color: white;
+    border-color: white;
+    background-color:	rgb(20, 220, 120);
+
+    text-align: center;
+
+    transition: .6s;
+
+    margin-top: 10px;
+    padding: 10px;
+}
+
+
+
+
+@media screen and (max-width: 800px){
+
+    nav{
+        text-align: center;
+        font-family: gadugi;
+        transition: .3s;
+    
+        background-color: rgba(0,0,0,80%);
+        color: #38BCBD;
+        height: 96px;
+    }
+    
+    nav ul{
+        list-style: none;
+        height: 48px;
+        width: auto;
+        
+    }
+
+    #div_form h1{
+        transition: .3s;
+        width: 380px;
+        margin: auto;
+        font-size: 35px;
+    
+        text-align: center;
+        background-color: #38BCBD;
+        color: #F35B8B;
+    }
+	
+    #form_buttons input[type=button],#form_buttons input[type=reset]{
+
+        outline:0;
+    
+        transition: .5s;
+        
+    
+        height: 40px;
+        width: 90px;
+    
+        background-color: #F35B8B;
+        color: #EEE5E9;
+        border: none;
+        font-size: 12pt;
+    }
+    
+    #form_buttons input[type=button]:hover{
+    
+        outline:0;
+    
+        
+        transition: .5s;
+        background-color: rgb(248, 133, 169);
+    }
+    
+    
+    
+    #form_buttons input[type=reset]:hover{
+    
+        outline:0;
+        
+        
+        transition: .5s;
+        background-color: rgb(248, 133, 169);
+    }
+    
+    #form_buttons{
+        margin-top: 15px;
+    }
+    
+    #btm_Submit{
+        margin-top: 2px;
+        margin-right: 1px;
+    }
+    
+    #btn_reset{
+        margin-top: 2px;
+        margin-left: 1px;
+    }
+}
